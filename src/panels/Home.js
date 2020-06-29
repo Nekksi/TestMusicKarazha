@@ -10,9 +10,10 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>KarazhaMusic</PanelHeader>
+		<PanelHeader>Айдана привет</PanelHeader>
+		
 		{fetchedUser &&
-		<Group title="User Data Fetched with VK Bridge">
+		<Group title="Айдана топ">
 			<Cell
 				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
 				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
@@ -21,10 +22,10 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 
-		<Group title="All Albums">
+		<Group title="Рекламная пауза...">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Show me your all album
+					Show me the Persik, please
 				</Button>
 			</Div>
 		</Group>
@@ -45,6 +46,3 @@ Home.propTypes = {
 };
 
 export default Home;
-
-
-
