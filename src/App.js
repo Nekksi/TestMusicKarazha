@@ -8,9 +8,9 @@ import Home from './panels/Home';
 import Persik from './panels/Persik';
 
 const App = () => {
- const [activePanel, setActivePanel] = useState('home');
- const [fetchedUser, setUser] = useState(null);
- const [popout, setPopout] = useState(null);
+	const [activePanel, setActivePanel] = useState('home');
+	const [fetchedUser, setUser] = useState(null);
+	const [popout, setPopout] = useState(null);
 
 	useEffect(() => {
 		bridge.subscribe(({ detail: { type, data }}) => {
