@@ -21,7 +21,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 
-		<Group title="Navigation Example">
+		<Group title="All Albums">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
 					Show me your all album
@@ -45,4 +45,6 @@ Home.propTypes = {
 };
 
 export default Home;
+
+
 
