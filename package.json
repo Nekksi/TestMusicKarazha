@@ -2,7 +2,7 @@
   "name": "NewTest",
   "version": "1.0.0",
   "description": "",
-  "homepage": "./",
+  "homepage": "https://nekksi.github.io/TestMusicKarazha/",
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
